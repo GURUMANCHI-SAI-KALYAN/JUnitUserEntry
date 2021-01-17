@@ -15,9 +15,9 @@ public class UserValidator {
         Pattern pattern = Pattern.compile(Name_Pattern);
         return pattern.matcher(lname).matches();
     }
-    public boolean validateEmail(String email) {
+    public boolean validateEmail(String Email) {
         Pattern pattern = Pattern.compile(Email_Pattern);
-        return pattern.matcher(email).matches();
+        return pattern.matcher(Email).matches();
     }
     public boolean validatePhoneNumber(String phoneNumber) {
         Pattern pattern = Pattern.compile(Phone_Number_Pattern);

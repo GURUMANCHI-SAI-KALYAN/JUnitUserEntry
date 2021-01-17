@@ -21,13 +21,13 @@ public class UserValidatorTest {
     public void givenEmail_WhenProper_ShouldReturnTrue() {
         UserValidator validator = new UserValidator();
         boolean result = validator.validateEmail("kalyangurumanchi@gmail.com");
-        Assert.assertTrue(result);
+        Assert.assertEquals(true,result);
     }
     @Test
     public void givenPhoneNumber_WhenProper_ShouldReturnTrue() {
         UserValidator validator = new UserValidator();
         boolean result = validator.validatePhoneNumber("917013688155");
-        Assert.assertTrue(result);
+        Assert.assertEquals(true,result);
     }
     @Test
     public void givenPassword_WhenProper_ShouldReturnTrue() {
