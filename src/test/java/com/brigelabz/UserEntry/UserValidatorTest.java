@@ -26,7 +26,13 @@ public class UserValidatorTest {
     @Test
     public void givenPhoneNumber_WhenProper_ShouldReturnTrue() {
         UserValidator validator = new UserValidator();
-        boolean result = validator.validatePhoneNumber("917013688794");
+        boolean result = validator.validatePhoneNumber("917013688155");
         Assert.assertTrue(result);
+    }
+    @Test
+    public void givenPassword_WhenProper_ShouldReturnTrue() {
+        UserValidator validator = new UserValidator();
+        boolean result = validator.validatePassword("Saikalyan5Sai");
+        Assert.assertFalse(result);
     }
 }
