@@ -23,4 +23,10 @@ public class UserValidatorTest {
         boolean result = validator.validateEmail("kalyangurumanchi@gmail.com");
         Assert.assertTrue(result);
     }
+    @Test
+    public void givenPhoneNumber_WhenProper_ShouldReturnTrue() {
+        UserValidator validator = new UserValidator();
+        boolean result = validator.validatePhoneNumber("917013688794");
+        Assert.assertTrue(result);
+    }
 }
