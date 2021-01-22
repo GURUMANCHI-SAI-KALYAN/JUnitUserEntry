@@ -39,7 +39,7 @@ public class ValidateAllEmails {
                                                 { "abc-100@yahoo.com",true } } );
         }
     @Test
-            public void givenEmailAsVar_ShouldReturnAsPerParametrizedResult() {
+            public void givenEmailAsVar_ShouldReturnAsPerParametrizedResult() throws UserRegistrationExceptions {
             UserValidator validator = new UserValidator();
             boolean Result = validator.validateEmail(this.allEmails);
             Assert.assertEquals(this.resultexp, Result);
